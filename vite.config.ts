@@ -15,16 +15,16 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  server: {
-    proxy: {
-      // 代理配置
-      '/api': {
-        target: 'https://api.uomg.com/',
-        changeOrigin: true,
-        // rewrite: (path) => path.replace(/^\/api/, ''),
-        // 如需处理 HTTPS 证书验证
-        secure: false
-      }
-    }
-  },
+  // server: {
+  //   proxy: {
+  //     // 代理配置
+  //     '/api': {
+  //       target: 'https://api.uomg.com/',
+  //       changeOrigin: true,
+  //       // rewrite: (path) => path.replace(/^\/api/, ''),
+  //       // 如需处理 HTTPS 证书验证
+  //       secure: false
+  //     }
+  //   }
+  // },
 })
