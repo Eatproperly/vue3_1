@@ -31,3 +31,12 @@ npm run dev
 ```sh
 npm run build
 ```
+# 创建初始提交
+git add .
+git commit -m "Initial commit"
+
+# 创建并切换到 main 分支
+git checkout -b main
+
+# 推送
+git push -u origin main
