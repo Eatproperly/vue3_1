@@ -4,6 +4,7 @@
 	<!-- <span v-show="dogList.isLoading">加载中......</span><br> -->
 	<button @click="getHead">来一个动漫女头</button>
 	</div>
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   </template>
   
   <script lang="ts">
