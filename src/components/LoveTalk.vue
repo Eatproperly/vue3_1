@@ -1,5 +1,5 @@
 <template>
-  <div class="talk">
+  <div class="content">
     <button @click="getLoveTalk">获取一句土味情话</button>
     <ul>
       <li v-for="talk in talkList" :key="talk.id">{{talk.title}}</li>
@@ -40,4 +40,10 @@ import { storeToRefs } from 'pinia';
     border-radius: 10px;
     box-shadow: 0 0 10px;
   }
+  /* 内容区域 */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; /* 允许垂直滚动 */
+}
 </style>
