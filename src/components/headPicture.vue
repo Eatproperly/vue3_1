@@ -1,10 +1,9 @@
 <template>
 	<div class="content">
-	<img v-for="(head,index) in headList" :key="index" :src="forceHttp(head)"  referrerpolicy="no-referrer"> 
+	<img v-for="(head,index) in headList" :key="index" :src="head.replace('https://','http://')"  referrerpolicy="no-referrer"> 
 	<!-- <span v-show="dogList.isLoading">加载中......</span><br> -->
 	<button @click="getHead">来一个动漫女头</button>
 	</div>
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   </template>
   
   <script lang="ts">
@@ -17,7 +16,7 @@
   
   <script setup lang="ts">
 	import useDog from '@/hooks/useDog'
-	const forceHttp = (url: string) => url.replace(/^https?:\/\//, 'http://');
+	// const forceHttp = (url: string) => url.replace(/^https?:\/\//, 'http://');
 	let {getHead,headList} = useDog()
   </script>
   
