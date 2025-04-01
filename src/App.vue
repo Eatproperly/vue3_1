@@ -32,8 +32,7 @@ src="https://music.163.com/outchain/player?type=0&id=9864212174&auto=1">
   import LoveTalk from './components/LoveTalk.vue'
 import DogPicture from './components/dogPicture.vue';
   import headPicture from './components/headPicture.vue'
-  import ImageUpload from './ImageUpload.vue'
-  import GetImage from './GetImage.vue'
+
   // import Modal from './Modal.vue';
 </script>
 <style>
